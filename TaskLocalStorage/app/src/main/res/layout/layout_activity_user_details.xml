@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewHandler"
+            type="com.task.tasklocalstorage.ui.helper.callback.OnViewClicked" />
+        <variable
+            name="data"
+            type="com.task.tasklocalstorage.ui.dashboard.userdetail.UserDetailViewModel.DataObserver" />
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_20sdp">
+
+                <TextView
+                    style="@style/Widget.Task.Text.Heading.Black"
+                    android:id="@+id/tv_heading_otp_01"
+                    android:text="User Details"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_20sdp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_30sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:onClick="@{viewHandler::onViewClicked}"
+                    app:civ_border_color="@color/black"
+                    app:civ_border_width="@dimen/_1sdp"
+                    android:id="@+id/iv_user_image"
+                    android:src="@drawable/ic_user"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    style="@style/Widget.Task.Text.Body.Boulder"
+                    android:layout_width="wrap_content"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:text="User Name"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Task.Text.TextInputLayout"
+                    android:id="@+id/full_name_input_layout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/Widget.Task.Default.EditText.Black"
+                        android:inputType="textPersonName"
+                        android:maxLength="50"
+                        android:text="@={data.userName}"
+                        android:id="@+id/et_full_name_input_sign_up"
+                        android:hint="Enter User Name"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    style="@style/Widget.Task.Text.Body.Boulder"
+                    android:layout_width="wrap_content"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:text="User Email"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Task.Text.TextInputLayout"
+                    android:id="@+id/email_input_layout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/Widget.Task.Default.EditText.Black"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="50"
+                        android:text="@={data.userEmail}"
+                        android:id="@+id/et_email_input_sign_up"
+                        android:hint="Enter User Email"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    style="@style/Widget.Task.OutlineButton.Default.RoundCorner.Red_a700"
+                    android:layout_width="match_parent"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:id="@+id/btn_add_update_user"
+                    android:onClick="@{viewHandler::onViewClicked}"
+                    android:text="Submit"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

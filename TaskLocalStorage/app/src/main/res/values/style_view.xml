@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--alert dialog style-->
+    <style name="AlertStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/wild_sand</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AlertStyleFull" parent="Theme.AppCompat.Dialog">
+        <item name="colorPrimaryDark">@color/wild_sand</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="Widget.Task.BottomSheetStyle">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Widget.Task.Default">
+        <item name="android:paddingTop">@dimen/padding_top</item>
+        <item name="android:paddingBottom">@dimen/padding_bottom</item>
+        <item name="android:paddingStart" tools:targetApi="jelly_bean_mr1">@dimen/padding_start</item>
+        <item name="android:paddingEnd">@dimen/padding_end</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Widget.Task.Default.AppBar" parent="Widget.Task.Default">
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Widget.Task.Default.Margin" parent="Widget.Task.Default">
+        <item name="android:paddingTop">@dimen/_1sdp</item>
+        <item name="android:paddingBottom">@dimen/_1sdp</item>
+        <item name="android:paddingStart">@dimen/_1sdp</item>
+        <item name="android:paddingEnd">@dimen/_1sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">@dimen/margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom</item>
+        <item name="android:layout_marginStart">@dimen/margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/margin_end</item>
+    </style>
+
+    <style name="Widget.Task.Default.Padding" parent="Widget.Task.Default">
+        <item name="android:paddingTop">@dimen/view_padding_top</item>
+        <item name="android:paddingBottom">@dimen/view_padding_bottom</item>
+        <item name="android:paddingStart">@dimen/view_padding_start</item>
+        <item name="android:paddingEnd">@dimen/view_padding_end</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">@dimen/_1sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_1sdp</item>
+        <item name="android:layout_marginStart">@dimen/_1sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_1sdp</item>
+    </style>
+
+    <style name="Widget.Task.Default.MarginPadding" parent="Widget.Task.Default">
+        <item name="android:paddingTop">@dimen/view_padding_top</item>
+        <item name="android:paddingBottom">@dimen/view_padding_bottom</item>
+        <item name="android:paddingStart">@dimen/view_padding_start</item>
+        <item name="android:paddingEnd">@dimen/view_padding_end</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">@dimen/margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom</item>
+        <item name="android:layout_marginStart">@dimen/margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/margin_end</item>
+    </style>
+
+    <style name="Widget.Task.Default.NoMarginPadding" parent="Widget.Task.Default">
+        <item name="android:paddingTop">@dimen/_1sdp</item>
+        <item name="android:paddingBottom">@dimen/_1sdp</item>
+        <item name="android:paddingStart">@dimen/_1sdp</item>
+        <item name="android:paddingEnd">@dimen/_1sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+    </style>
+
+    <style name="Widget.Task.Default.Content" parent="Widget.Task.Default">
+        <item name="android:paddingTop">@dimen/_4sdp</item>
+        <item name="android:paddingBottom">@dimen/_4sdp</item>
+        <item name="android:paddingStart">@dimen/_6sdp</item>
+        <item name="android:paddingEnd">@dimen/_6sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/_40sdp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+    </style>
+
+    <style name="Widget.Task.Default.EditText" parent="Widget.Task.Default">
+        <item name="android:paddingTop">@dimen/_8sdp</item>
+        <item name="android:paddingBottom">@dimen/_8sdp</item>
+        <item name="android:paddingStart">@dimen/_10sdp</item>
+        <item name="android:paddingEnd">@dimen/_10sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_45sdp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginTop">@dimen/_1sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_1sdp</item>
+        <item name="android:layout_marginStart">@dimen/_1sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_1sdp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <!--edit text view black-->
+
+    <style name="Widget.Task.Default.EditText.Black" parent="Widget.Task.Default.EditText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_content</item>
+        <item name="hintTextColor">@color/mercury</item>
+        <item name="android:inputType">text</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!--    <style name="Widget.Task.Default.EditText.Black.NoMargin" parent="Widget.Task.Default.EditText.Black">-->
+    <!--        <item name="android:background">@drawable/shape_rectangle_white_background_no_margin</item>-->
+    <!--    </style>-->
+
+    <style name="Widget.Task.Default.AutoCompleteEditText" parent="Widget.Task.Default.EditText.Black">
+        <item name="android:ems">10</item>
+    </style>
+
+    <!--    <style name="Widget.Task.Default.AutoCompleteEditText.NoMargin" parent="Widget.Task.Default.AutoCompleteEditText">-->
+    <!--        <item name="android:background">@drawable/shape_rectangle_white_background_no_margin</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="Widget.Task.Default.EditText.Black.Small" parent="Widget.Task.Default.EditText.Black">-->
+    <!--        <item name="android:background">@drawable/shape_rectangle_white_background_no_margin</item>-->
+    <!--        <item name="android:layout_height">@dimen/_35sdp</item>-->
+    <!--        <item name="android:layout_margin">0dp</item>-->
+    <!--        <item name="android:textSize">@dimen/text_size_small</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="Widget.Task.Default.EditText.Black.Small.NoBackground" parent="Widget.Task.Default.EditText.Black.Small">-->
+    <!--        <item name="android:background">@android:color/transparent</item>-->
+    <!--    </style>-->
+
+    <style name="Widget.Task.Default.ToggleButton" parent="Widget.Task.Default">
+        <item name="android:layout_width">@dimen/_25sdp</item>
+        <item name="android:layout_height">@dimen/_25sdp</item>
+        <item name="android:textOff">""</item>
+        <item name="android:textOn">""</item>
+    </style>
+
+    <!--    <style name="Widget.Task.Switch" parent="Theme.AppCompat.Light"/>-->
+
+    <!--    <style name="Widget.Task.Switch.Primary" parent="Widget.Task.Switch">-->
+    <!--        &lt;!&ndash; active thumb & track color (30% transparency) &ndash;&gt;-->
+    <!--        <item name="colorControlActivated">@color/colorPrimary</item>-->
+
+    <!--        &lt;!&ndash; inactive thumb color &ndash;&gt;-->
+    <!--        <item name="colorSwitchThumbNormal">@color/colorWhite</item>-->
+
+    <!--        &lt;!&ndash; inactive track color (30% transparency) &ndash;&gt;-->
+    <!--        <item name="android:colorForeground">@color/colorWhite</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="Widget.Task.Switch.White" parent="Widget.Task.Switch">-->
+    <!--        &lt;!&ndash; active thumb & track color (30% transparency) &ndash;&gt;-->
+    <!--        <item name="colorControlActivated">@color/colorPrimary</item>-->
+
+    <!--        &lt;!&ndash; inactive thumb color &ndash;&gt;-->
+    <!--        <item name="colorSwitchThumbNormal">@color/colorWhite</item>-->
+
+    <!--        &lt;!&ndash; inactive track color (30% transparency) &ndash;&gt;-->
+    <!--        <item name="android:colorForeground">@color/colorWhite</item>-->
+    <!--    </style>-->
+
+    <style name="SearchAutoCompleteTextView" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/wild_sand</item>
+    </style>
+
+    <style name="OtpWidget"/>
+
+
+    <style name="Widget.Task.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:elevation">@dimen/_10sdp</item>
+        <item name="android:textSize">@dimen/text_size_body</item>
+    </style>
+
+    <style name="Widget.Task.OutlineButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/_50sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingStart">@dimen/_6sdp</item>
+        <item name="android:paddingEnd">@dimen/_6sdp</item>
+        <item name="android:paddingTop">@dimen/_6sdp</item>
+        <item name="android:paddingBottom">@dimen/_6sdp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="cornerRadius">@dimen/_1sdp</item>
+        <item name="elevation">@dimen/_1sdp</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="strokeWidth">@dimen/_1sdp</item>
+        <item name="rippleColor">@color/wild_sand</item>
+        <item name="android:textAppearance">?attr/textAppearanceButton</item>
+    </style>
+
+    <style name="Widget.Task.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:minHeight">@dimen/_30sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingStart">@dimen/_6sdp</item>
+        <item name="android:paddingEnd">@dimen/_6sdp</item>
+        <item name="android:paddingTop">@dimen/_6sdp</item>
+        <item name="android:paddingBottom">@dimen/_6sdp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="cornerRadius">@dimen/_1sdp</item>
+        <item name="elevation">@dimen/_1sdp</item>
+        <item name="strokeColor">@android:color/transparent</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="strokeWidth">@dimen/_1sdp</item>
+        <item name="rippleColor">@color/black</item>
+        <item name="android:textAppearance">?attr/textAppearanceButton</item>
+    </style>
+
+    <style name="Widget.Task.TextButton.Icon" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="android:minHeight">@dimen/_30sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="cornerRadius">@dimen/_5sdp</item>
+        <item name="elevation">@dimen/_1sdp</item>
+        <item name="strokeColor">@color/wild_sand</item>
+        <item name="backgroundTint">@color/wild_sand</item>
+        <item name="strokeWidth">@dimen/_1sdp</item>
+        <item name="rippleColor">@color/black</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">@dimen/_10sdp</item>
+        <item name="iconTint">@color/black</item>
+<!--        <item name="iconTintMode">screen</item>-->
+        <item name="android:textAppearance">?attr/textAppearanceButton</item>
+    </style>
+
+    <style name="Widget.Task.TextButton.Small" parent="Widget.Task.TextButton">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <!--        <item name="android:textColor">@color/selector_gray_to_blue_for_text_view</item>-->
+    </style>
+
+    <style name="Widget.Task.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <!--        <item name="trackTint">@color/selector_gray_to_blue_switch</item>-->
+        <!--        <item name="thumbTint">@color/selector_gray_to_blue_switch</item>-->
+    </style>
+
+    <style name="Widget.Task.OutlineButton.Medium" parent="Widget.Task.OutlineButton">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="Widget.Task.OutlineButton.Small" parent="Widget.Task.OutlineButton">
+        <item name="android:textSize">@dimen/text_size_tiny</item>
+        <item name="android:layout_height">@dimen/_30sdp</item>
+    </style>
+
+    <style name="Widget.Task.OutlineButton.Default" parent="Widget.Task.OutlineButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="strokeColor">@android:color/transparent</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+    </style>
+
+    <style name="Widget.Task.OutlineButton.Default.Red_a700" parent="Widget.Task.OutlineButton.Default">
+                <item name="android:textColor">@color/white</item>
+                <item name="strokeColor">@color/red_a700</item>
+                <item name="backgroundTint">@color/red_a700</item>
+                <item name="android:textSize">@dimen/text_size_content</item>
+                <item name="android:paddingStart">@dimen/_20sdp</item>
+                <item name="android:paddingEnd">@dimen/_20sdp</item>
+    </style>
+
+    <style name="Widget.Task.OutlineButton.Default.TransparentBackground" parent="Widget.Task.OutlineButton.Default">
+        <item name="android:textColor">@color/white</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/text_size_content</item>
+    </style>
+
+    <style name="Widget.Task.OutlineButton.Default.RoundCorner" parent="Widget.Task.OutlineButton.Default">
+        <item name="cornerRadius">@dimen/_5sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:padding">@dimen/_2sdp</item>
+        <item name="android:minHeight">@dimen/_35sdp</item>
+    </style>
+
+    <style name="Widget.Task.OutlineButton.Default.RoundCorner.Red_a700" parent="Widget.Task.OutlineButton.Default.RoundCorner">
+        <item name="cornerRadius">@dimen/_5sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingTop">@dimen/_2sdp</item>
+        <item name="android:paddingBottom">@dimen/_2sdp</item>
+        <item name="android:minHeight">@dimen/_45sdp</item>
+
+        <item name="android:textColor">@color/white</item>
+        <item name="strokeColor">@color/red_a700</item>
+        <item name="backgroundTint">@color/red_a700</item>
+        <item name="android:textSize">@dimen/text_size_content</item>
+        <item name="android:paddingStart">@dimen/_20sdp</item>
+        <item name="android:paddingEnd">@dimen/_20sdp</item>
+    </style>
+
+    <style name="Widget.Task.OutlineButton.Default.RoundCorner.Red_a700.Small" parent="Widget.Task.OutlineButton.Default.RoundCorner.Red_a700">
+        <item name="cornerRadius">@dimen/_5sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingTop">@dimen/_2sdp</item>
+        <item name="android:paddingBottom">@dimen/_2sdp</item>
+        <item name="android:minHeight">@dimen/_45sdp</item>
+
+        <item name="android:textColor">@color/white</item>
+        <item name="strokeColor">@color/red_a700</item>
+        <item name="backgroundTint">@color/red_a700</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:paddingStart">@dimen/_20sdp</item>
+        <item name="android:paddingEnd">@dimen/_20sdp</item>
+    </style>
+
+    <style name="Widget.Task.OutlineButton.Default.RoundCorner.Wild_Sand" parent="Widget.Task.OutlineButton.Default.RoundCorner">
+        <item name="cornerRadius">@dimen/_5sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingTop">@dimen/_2sdp</item>
+        <item name="android:paddingBottom">@dimen/_2sdp</item>
+        <item name="android:minHeight">@dimen/_45sdp</item>
+
+        <item name="android:textColor">@color/black</item>
+        <item name="strokeColor">@color/wild_sand</item>
+        <item name="backgroundTint">@color/wild_sand</item>
+        <item name="android:textSize">@dimen/text_size_content</item>
+        <item name="android:paddingStart">@dimen/_20sdp</item>
+        <item name="android:paddingEnd">@dimen/_20sdp</item>
+    </style>
+
+    <style name="Widget.Task.OutlineButton.Default.RoundCorner.Wild_Sand.Small" parent="Widget.Task.OutlineButton.Default.RoundCorner.Wild_Sand">
+        <item name="cornerRadius">@dimen/_5sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingTop">@dimen/_2sdp</item>
+        <item name="android:paddingBottom">@dimen/_2sdp</item>
+        <item name="android:minHeight">@dimen/_45sdp</item>
+
+        <item name="android:textColor">@color/black</item>
+        <item name="strokeColor">@color/wild_sand</item>
+        <item name="backgroundTint">@color/wild_sand</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:paddingStart">@dimen/_20sdp</item>
+        <item name="android:paddingEnd">@dimen/_20sdp</item>
+    </style>
+
+    <style name="Widget.Task.Text.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="elevation">@dimen/_1sdp</item>
+        <item name="boxBackgroundColor">@color/wild_sand</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/_5sdp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/_5sdp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/_5sdp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/_5sdp</item>
+        <item name="boxStrokeWidth">@dimen/_1sdp</item>
+        <item name="boxStrokeWidthFocused">@dimen/_1sdp</item>
+        <item name="boxStrokeColor">@color/selector_edit_text_color</item>
+        <item name="hintEnabled">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:elevation">@dimen/elevation_text</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="hintTextColor">@color/mercury</item>
+        <item name="android:shadowColor">@color/wild_sand</item>
+    </style>
+
+    <style name="VerifyOtpText" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginTop">@dimen/_8sdp</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ToolbarTitleText" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Widget.Task.TextAppearance" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_size_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/alabaster</item>
+    </style>
+
+    <style name="Widget.Task.TextAppearance.Tab" parent="Widget.Task.TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Widget.Task.RatingBar" parent="Widget.Task">
+        <item name="android:progressTint">@color/red_a700</item>
+        <item name="android:progressBackgroundTint">@color/red_a700</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:numStars">5</item>
+    </style>
+
+    <style name="Widget.Task.RatingBar.Sky.Small" parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="android:progressBackgroundTint">@color/red_a700</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:progressTint">@color/red_a700</item>
+        <item name="android:numStars">5</item>
+    </style>
+    
+    <style name="Widget.Task.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardForegroundColor">@null</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardCornerRadius">@dimen/_10sdp</item>
+        <item name="cardElevation">@dimen/_6sdp</item>
+        <item name="cardBackgroundColor">@color/white</item>
+    </style>
+
+    <style name="Widget.Task.Card.Shadow"  tools:targetApi="p" parent="Widget.Task.Card">
+        <item name="android:outlineAmbientShadowColor">@color/black</item>
+        <item name="android:outlineSpotShadowColor">@color/black</item>
+        <item name="rippleColor">@color/black</item>
+    </style>
+
+
+    <style name="Widget.Menu.Icon" parent="Widget">
+        <item name="android:layout_width">@dimen/_18sdp</item>
+        <item name="android:layout_height">@dimen/_18sdp</item>
+        <item name="android:tint">@color/white</item>
+    </style>
+
+    <style name="Widget.Task.SearchView" parent="Widget.Task.Text.Content.Black">
+<!--        <item name="android:searchIcon">@drawable/ic_m_search_view</item>-->
+<!--        <item name="android:padding">@dimen/_3sdp</item>-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">@dimen/_30sdp</item>-->
+<!--        <item name="android:background">@drawable/shape_round_border_view</item>-->
+<!--        <item name="android:queryBackground">@android:color/transparent</item>-->
+<!--        <item name="queryBackground">@android:color/transparent</item>-->
+<!--        <item name="iconifiedByDefault">false</item>-->
+<!--        <item name="hintTextColor">@color/darkGrayColor</item>-->
+<!--        <item name="searchIcon">@drawable/ic_m_search_view</item>-->
+<!--        <item name="searchHintIcon">@drawable/ic_m_search_view</item>-->
+<!--        <item name="android:textColorHint">@color/black</item>-->
+<!--        <item name="android:textColor">@color/colorBlack</item>-->
+<!--        <item name="editTextColor">@color/colorBlack</item>-->
+<!--        <item name="android:textSize">@dimen/text_size_toolbar</item>-->
+    </style>
+
+    <style name="Widget.Task.SearchView.Small" parent="Widget.Task.SearchView">
+<!--        <item name="android:background">@drawable/shape_rectangle_white_background_no_margin</item>-->
+<!--        <item name="android:layout_height">@dimen/_25sdp</item>-->
+<!--        <item name="android:textSize">@dimen/text_size_small</item>-->
+    </style>
+
+    <style name="Widget.Task.CheckBox" parent="Widget.Task.Text.Content.Black">
+<!--        <item name="android:textSize">@dimen/text_size_content</item>-->
+<!--        <item name="android:background">@drawable/shape_rectangle_white_background_no_margin</item>-->
+<!--        <item name="android:gravity">center_vertical</item>-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:paddingHorizontal" tools:targetApi="o">@dimen/_8sdp</item>-->
+<!--        <item name="buttonTint">@color/colorBlue</item>-->
+    </style>
+
+    <style name="Widget.Task.CheckBox.NoBackground" parent="Widget.Task.CheckBox">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    
+</resources>

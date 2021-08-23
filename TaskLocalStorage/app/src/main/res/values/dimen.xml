@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_extra_large">@dimen/_25sdp</dimen>
+    <dimen name="text_size_large">@dimen/_23sdp</dimen>
+    <dimen name="text_size_heading">@dimen/_18sdp</dimen>
+    <dimen name="text_size_title">@dimen/_16sdp</dimen>
+    <dimen name="text_size_big_title">@dimen/_22sdp</dimen>
+    <dimen name="text_size_subtitle">@dimen/_15sdp</dimen>
+    <dimen name="text_size_body">@dimen/_14sdp</dimen>
+    <dimen name="text_size_menu">@dimen/_10sdp</dimen>
+    <dimen name="text_size_content">@dimen/_13sdp</dimen>
+    <dimen name="text_size_toolbar">@dimen/_11sdp</dimen>
+    <dimen name="text_size_small">@dimen/_10sdp</dimen>
+    <dimen name="text_size_tiny">@dimen/_8sdp</dimen>
+    <dimen name="text_size_footnote">@dimen/_12sdp</dimen>
+    <dimen name="text_size_button">@dimen/_14sdp</dimen>
+    <dimen name="text_size_medium">@dimen/_14sdp</dimen>
+
+    <dimen name="layout_margin_horizontal">@dimen/_25sdp</dimen>
+    <dimen name="layout_margin_vertical">@dimen/_30sdp</dimen>
+
+    <!--    elevation-->
+    <dimen name="elevation_text">@dimen/_1sdp</dimen>
+
+    <!--    default padding UI-->
+    <dimen name="padding_top">@dimen/_8sdp</dimen>
+    <dimen name="padding_bottom">@dimen/_8sdp</dimen>
+    <dimen name="padding_start">@dimen/_25sdp</dimen>
+    <dimen name="padding_end">@dimen/_25sdp</dimen>
+
+    <!--    default margin UI-->
+    <dimen name="margin_top">@dimen/_10sdp</dimen>
+    <dimen name="margin_bottom">@dimen/_10sdp</dimen>
+    <dimen name="margin_start">@dimen/_25sdp</dimen>
+    <dimen name="margin_end">@dimen/_25sdp</dimen>
+
+    <!--    default padding view-->
+    <dimen name="view_padding_top">@dimen/_3sdp</dimen>
+    <dimen name="view_padding_bottom">@dimen/_3sdp</dimen>
+    <dimen name="view_padding_start">@dimen/_3sdp</dimen>
+    <dimen name="view_padding_end">@dimen/_3sdp</dimen>
+
+</resources>

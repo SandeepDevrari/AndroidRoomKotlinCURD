@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey_900">#171717</color>
+    <color name="red_a700">#CF0101</color>
+    <color name="wild_sand">#F7F7F7</color>
+    <color name="dorado">#4B4B4B</color>
+    <color name="alabaster">#FAFAFA</color>
+    <color name="boulder">#7A7A7A</color>
+    <color name="mercury">#E3E3E3</color>
+    <color name="black_trans">#C6000000</color>
+    <color name="wild_sand_trans">#56F7F7F7</color>
+
+    <color name="white_semi_transparent">#A3FFFFFF</color>
+</resources>

@@ -1,0 +1,126 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.task.tasklocalstorage"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures{
+        dataBinding=true
+    }
+
+    flavorDimensions "default"
+
+    productFlavors{
+        dev{
+            dimension "default"
+            buildConfigField "String","REST_BASE_URL",'"https://api.researchcrestonlineinstitute.in/"'
+        }
+        prod{
+            dimension "default"
+            buildConfigField "String","REST_BASE_URL",'"https://api.researchcrestonlineinstitute.in/"'
+        }
+    }
+}
+
+dependencies {
+
+    //implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+
+    //androidx
+    implementation "androidx.appcompat:appcompat:$androidx_appcompat"
+
+    //constraint
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_lay"
+
+    //X lifecycle
+    implementation "androidx.lifecycle:lifecycle-common-java8:$life_cycle"
+    implementation "androidx.lifecycle:lifecycle-extensions:$life_cycle"
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
+
+    //recycler
+    implementation "androidx.recyclerview:recyclerview:$recycler"
+
+    //Dimens
+    implementation "com.intuit.sdp:sdp-android:$sdp"
+
+    //google material
+    implementation "com.google.android.material:material:$google_material"
+
+    //coroutine
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9"
+
+    //dagger2
+    implementation "com.google.dagger:dagger:$dagger"
+    implementation "com.google.dagger:dagger-android:$dagger"
+    implementation "com.google.dagger:dagger-android-support:$dagger"
+    kapt "com.google.dagger:dagger-compiler:$dagger"
+    kapt "com.google.dagger:dagger-android-processor:$dagger"
+
+    //ted image& permission
+    implementation 'gun0912.ted:tedimagepicker:1.1.10'
+    implementation 'gun0912.ted:tedbottompicker:2.0.1'
+    implementation 'gun0912.ted:tedpermission-rx2:2.2.3'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.11.0'
+
+    //RxJava
+    implementation "io.reactivex.rxjava2:rxandroid:$rx_android"
+    implementation "io.reactivex.rxjava2:rxjava:$rx_java"
+
+    //progress bar
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    //timber
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    //image view
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //room
+
+    // Room components
+    implementation "androidx.room:room-ktx:$roomVersion"
+    kapt "androidx.room:room-compiler:$roomVersion"
+    androidTestImplementation "androidx.room:room-testing:$roomVersion"
+
+    //test
+    testImplementation "junit:junit:$junit"
+    androidTestImplementation "androidx.test.ext:junit:$junit_test"
+    //espresso
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

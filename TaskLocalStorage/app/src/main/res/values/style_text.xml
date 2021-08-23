@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Text Styles-->
+    <style name="Widget" />
+
+    <style name="Widget.Task" />
+
+    <style name="Widget.Task.Text">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.03125</item>
+        <item name="android:textColorHint">@color/alabaster</item>
+    </style>
+
+    <style name="Widget.Task.Text.Large" parent="Widget.Task.Text">
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Widget.Task.Text.Heading" parent="Widget.Task.Text">
+        <item name="android:textSize">@dimen/text_size_heading</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Widget.Task.Text.Title" parent="Widget.Task.Text">
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:elevation" tools:ignore="NewApi">0dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Widget.Task.Text.Subtitle" parent="Widget.Task.Text">
+        <item name="android:textSize">@dimen/text_size_subtitle</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Widget.Task.Text.Body" parent="Widget.Task.Text">
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Widget.Task.Text.Menu" parent="Widget.Task.Text">
+        <item name="android:textSize">@dimen/text_size_menu</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Widget.Task.Text.Content" parent="Widget.Task.Text">
+        <item name="android:textSize">@dimen/text_size_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Widget.Task.Text.Toolbar" parent="Widget.Task.Text">
+        <item name="android:textSize">@dimen/text_size_toolbar</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="Widget.Task.Text.Small" parent="Widget.Task.Text">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Widget.Task.Text.Tiny" parent="Widget.Task.Text">
+        <item name="android:textSize">@dimen/text_size_tiny</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Widget.Task.Text.FootNote" parent="Widget.Task.Text">
+        <item name="android:textSize">@dimen/text_size_footnote</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">@dimen/_3sdp</item>
+    </style>
+
+    <!--    white colored text-->
+    <style name="Widget.Task.Text.Large.White" parent="Widget.Task.Text.Large">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.Task.Text.Heading.White" parent="Widget.Task.Text.Heading">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.Task.Text.Subtitle.White" parent="Widget.Task.Text.Subtitle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.Task.Text.Body.White" parent="Widget.Task.Text.Body">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.Task.Text.Menu.White" parent="Widget.Task.Text.Menu">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.Task.Text.Content.White" parent="Widget.Task.Text.Content">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.Task.Text.Toolbar.White" parent="Widget.Task.Text.Toolbar">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.Task.Text.Small.White" parent="Widget.Task.Text.Small">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.Task.Text.Tiny.White" parent="Widget.Task.Text.Tiny">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.Task.Text.FootNote.White" parent="Widget.Task.Text.FootNote">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.Task.Text.Title.White" parent="Widget.Task.Text.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--black color text-->
+    <style name="Widget.Task.Text.Large.Black" parent="Widget.Task.Text.Large">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Widget.Task.Text.Heading.Black" parent="Widget.Task.Text.Heading">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Widget.Task.Text.Subtitle.Black" parent="Widget.Task.Text.Subtitle">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Widget.Task.Text.Body.Black" parent="Widget.Task.Text.Body">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Widget.Task.Text.Menu.Black" parent="Widget.Task.Text.Menu">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Widget.Task.Text.Content.Black" parent="Widget.Task.Text.Content">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Widget.Task.Text.Toolbar.Black" parent="Widget.Task.Text.Toolbar">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Widget.Task.Text.Title.Black" parent="Widget.Task.Text.Title">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Widget.Task.Text.Small.Black" parent="Widget.Task.Text.Small">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Widget.Task.Text.Tiny.Black" parent="Widget.Task.Text.Tiny">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Widget.Task.Text.FootNote.Black" parent="Widget.Task.Text.FootNote">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--- Boulder -->
+    <style name="Widget.Task.Text.Small.Boulder" parent="Widget.Task.Text.Small">
+        <item name="android:textColor">@color/boulder</item>
+    </style>
+
+    <style name="Widget.Task.Text.Body.Boulder" parent="Widget.Task.Text.Body">
+        <item name="android:textColor">@color/boulder</item>
+    </style>
+
+    <!--red a700-->
+    <style name="Widget.Task.Text.Toolbar.Red_a700" parent="Widget.Task.Text.Toolbar">
+        <item name="android:textColor">@color/red_a700</item>
+    </style>
+
+    <style name="Widget.Task.Text.Small.Red_a700" parent="Widget.Task.Text.Small">
+        <item name="android:textColor">@color/red_a700</item>
+    </style>
+
+
+    <style name="Widget.Task.Text.Body.Red_a700" parent="Widget.Task.Text.Body">
+        <item name="android:textColor">@color/red_a700</item>
+    </style>
+
+
+    <style name="Widget.Task.Text.Title.Red_a700" parent="Widget.Task.Text.Title">
+        <item name="android:textColor">@color/red_a700</item>
+    </style>
+
+    <style name="Widget.Task.Text.Content.Red_a700" parent="Widget.Task.Text.Content">
+        <item name="android:textColor">@color/red_a700</item>
+    </style>
+
+
+    <!--black shadow color text-->
+    <style name="Widget.Task.Text.Large.Black.Shadow" parent="Widget.Task.Text.Large.Black">
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowRadius">10</item>
+        <item name="android:shadowDx">8</item>
+        <item name="android:shadowDy">10</item>
+    </style>
+
+    <!--bold colors-->
+    <style name="Widget.Task.Text.Body.White.Bold" parent="Widget.Task.Text.Body.White">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.Task.Text.Title.Black.Bold" parent="Widget.Task.Text.Title.Black">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.Task.Text.Title.White.Bold" parent="Widget.Task.Text.Title.White">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.Task.Text.Title.Red_a700.Bold" parent="Widget.Task.Text.Title.Red_a700">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.Task.Text.Body.Black.Bold" parent="Widget.Task.Text.Body.Black">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.Task.Text.Small.Red_a700.Bold" parent="Widget.Task.Text.Small.Red_a700">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.Task.Text.Toolbar.Red_a700.Bold" parent="Widget.Task.Text.Toolbar.Red_a700">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+<!--    text appearance-->
+    <style name="TextAppearance.Menu" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_tiny</item>
+    </style>
+    
+    <!--    <style name="Widget.Task.Text.Small.Gray.Background" parent="Widget.Task.Text.Small.Gray">-->
+    <!--        <item name="android:background">@drawable/shape_rectangle_gray_background_no_margin</item>-->
+    <!--        <item name="android:padding">@dimen/_8sdp</item>-->
+    <!--        <item name="android:textSize">@dimen/text_size_small</item>-->
+    <!--    </style>-->
+
+
+</resources>

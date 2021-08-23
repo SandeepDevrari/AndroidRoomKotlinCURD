@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TaskLocalStorage</string>
+
+    <string name="msg_somthing_went_wrong">Something went wrong!!</string>
+    <string name="msg_internet_not_connected">Internet is connected!</string>
+
+    <string name="text_open_setting">Open settings</string>
+    <string name="text_accept_permission">Accept the required permissions</string>
+    <string name="msg_please_allow_us_to_use_permission">In order to use the related feature seamlessly we required these permissions </string>
+    <string name="msg_image_permission_not_granted">The requested permissions are denied</string>
+    <string name="text_select_image">Select Image</string>
+</resources>
